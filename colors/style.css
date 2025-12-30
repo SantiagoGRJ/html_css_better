@@ -1,0 +1,17 @@
+.heading-one{
+    color: rgb(255, 99, 71);
+    border: 2px solid tomato
+}
+.paragraph-one{
+  color:dodgerblue  ;
+  border: 2px solid dodgerblue;
+
+}
+
+.heading-two{
+    background-color: rgb(255, 99, 71);
+}
+
+.heading-three{
+    background-color: rgba(255, 99, 71, 0.5);
+}

@@ -1,0 +1,11 @@
+h1{
+    background-color: dodgerblue; /* Background of the letters */
+    color: tomato; /* color of letter */
+    border:2px solid tomato; /* add border */
+}
+
+p{
+    background-color: tomato; /* Background of the letters */
+    color: dodgerblue ; /* color of letter */
+    border:2px solid dodgerblue ;
+}

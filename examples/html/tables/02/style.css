@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Montserrat",sans-serif;
+    margin: 0px;
+    padding: 0px;
+   
+}
+body{
+     background-color: #AB52C6;
+}
+
+.styled-table {
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 0px;
+
+}
+
+.styled-table thead th:first-child{
+    border-top-left-radius: 10px;
+}
+.styled-table thead th:last-child{
+    border-top-right-radius: 10px;
+}
+.styled-table tbody tr:last-child td:first-child{
+    border-bottom-left-radius: 10px;
+}
+.styled-table tbody tr:last-child td:last-child{
+    border-bottom-right-radius: 10px;
+}
+
+.styled-table thead th {
+    background-color: #36304A;
+    color: white;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td{
+    padding: 15px 17px;
+}
+.styled-table tbody tr{
+    background-color: #FFFFFF;
+}
+
+.styled-table tbody tr:nth-child(even){
+     background-color: #f3f3f3;
+}
+.styled-table tbody tr:hover{
+    background-color: #e6e6e6;
+}   
+
+.styled-table caption {
+    caption-side: bottom;
+    padding: 12px;
+    text-align: left;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+}

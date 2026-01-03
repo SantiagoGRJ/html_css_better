@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Montserrat",sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.styled-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 0px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 15px  rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.styled-table thead th {
+    background-color: #A3B0C7;
+    text-align: left;
+    color: white;
+}
+
+.styled-table thead th:first-child{
+    border-top-left-radius: 10px;
+}
+.styled-table thead th:last-child{
+    border-top-right-radius: 10px;
+}
+.styled-table tbody tr td:first-child {
+    font-weight: bold;
+}
+
+
+
+.styled-table th{
+    padding: 15px 17px;
+}
+.styled-table td{
+    padding: 16px 18px;
+}
+
+.styled-table tbody tr {
+    background-color: white;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #A3B0C7;
+}
+
+.styled-table caption {
+    caption-side: top;
+    padding: 12px;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+

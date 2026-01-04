@@ -1,0 +1,26 @@
+p{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+p.ex1 {
+    outline: dashed;
+    border-radius: 8px;
+}
+
+p.ex2{
+   outline: dotted red;
+   border-radius: 5px;
+}
+p.ex3{
+    outline: 7px solid yellow;
+    border-radius: 5px;
+}
+p.ex4{
+    outline: thick ridge pink;
+    border-radius: 8px;
+}
+p.ex5 {
+    outline: thick solid green;
+    border-radius: 10px;
+}

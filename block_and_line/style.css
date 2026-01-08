@@ -1,0 +1,17 @@
+
+.main{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.span-styled{
+    color: blue;
+    font-weight: bold;
+}
+
+.two-styled-span{
+    color: green;
+    font-weight: bold;
+}

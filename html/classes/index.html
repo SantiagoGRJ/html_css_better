@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML classes</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/postgresql.png" >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Html classes -->
+
+    <h1>My <span class="note">Important</span> Heading </h1>
+    <p>This is some <span class="note">important</span> text. </p>
+
+    <div class="city">
+        <h2 class="main">London</h2>
+        <p>London is the capital of England</p>
+    </div>
+
+    <div class="city">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France</p>
+    </div>
+
+    <div class="city">
+        <h2>Tokio</h2>
+        <p>Tokio is th capital of Japan</p>
+    </div>
+
+    <h3 class="test">loremm</h3>
+    
+    <script>
+
+        function myFunction(){
+            var x = document.getElementsByClassName("city");
+            for(var i = 0; i<x.length; i++){
+                x[i].style.display="none";
+            }
+        }
+
+    </script>
+</body>
+</html>

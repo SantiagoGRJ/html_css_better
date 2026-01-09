@@ -1,0 +1,30 @@
+
+/* 
+div{
+    width: 300px;
+    margin: auto;
+}
+
+
+.div{
+    width: 30%;
+    display: inline-block;
+}
+    
+*/
+
+.london{
+    background-color: yellow;
+}
+.oslo{
+    background-color: pink;
+}
+.rome{
+    background-color: green;
+}
+.flex{
+    display: flex;
+}
+.flex > div {
+    width: 33%;
+}

@@ -1,0 +1,51 @@
+body{
+    padding: 15px;
+}
+.first:link{
+    color: red;
+    text-decoration: none;
+    background-color: yellow;
+}
+.first:visited{
+    color: green;
+    text-decoration: none;
+    background-color: cyan;
+}
+.first:hover{
+    color: hotpink;
+    text-decoration: underline;
+    background-color: lightgreen;
+}
+.first:active{
+    color: blue;
+    text-decoration: underline;
+    background-color: hotpink;
+}
+
+.second:link, .second:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.second:hover, .second:active{
+    background-color: red;
+}
+
+.three:link, .three:visited{
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.three:hover, .three:active {
+    background-color: green;
+    color: white;
+}
+

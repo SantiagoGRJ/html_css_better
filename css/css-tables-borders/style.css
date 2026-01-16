@@ -1,0 +1,18 @@
+
+.first {
+    border-collapse: separate;
+    border-spacing: 15px;
+    margin-bottom: 30px;
+}
+
+.first table, .first th, .first td {
+    border: 1px solid green;
+}
+
+.first th, .first td {
+    padding: 10px;
+}
+
+.two {
+    border: 1px solid;
+}

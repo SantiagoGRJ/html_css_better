@@ -1,0 +1,21 @@
+
+ul{
+    background-color: salmon;
+    padding: 20px;
+}
+ul li {
+    background-color: mistyrose;
+    color: darkred;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+ol {
+    background-color: powderblue;
+    padding: 20px;
+}
+ol li {
+    background-color: mistyrose;
+    color: darkblue;
+    margin: 5px;
+}

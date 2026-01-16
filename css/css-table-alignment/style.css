@@ -1,0 +1,11 @@
+table{
+    width: 100%;
+}
+td{
+    height: 50px;
+    text-align: center;
+    vertical-align: bottom;
+}
+th{
+    text-align: left;
+}

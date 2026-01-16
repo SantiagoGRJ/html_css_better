@@ -1,0 +1,28 @@
+div.table-container{
+    overflow-x: auto;
+}
+
+.table{
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid grey;
+}
+.table th, .table td{
+    text-align: left;
+}
+.table th {
+     padding: 15px 17px;
+    background-color: #04AA6D;
+    color: white;
+}
+ .table td {
+    padding: 12px 14px;
+
+}
+.table tbody  tr:nth-child(even){
+    background-color: #C9CBCC;
+}
+.table tbody tr:hover{
+    background-color: #a1a1a1;
+}

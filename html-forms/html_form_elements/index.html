@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Elements</title>
+</head>
+
+<body>
+
+    <form action="">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname">
+
+        <br>
+        <br>
+
+        <label for="cars">Choose a Car:</label>
+        <select name="cars" id="cars" size="4" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+
+        <br>
+        <br>
+
+        <textarea name="message" rows="10" cols="30" id=""></textarea>
+
+        <textarea name="message" style="width:350px; height: 150px">
+            The cat was playing in the garden.
+        </textarea>
+
+        <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+
+    </form>
+
+    <br>
+
+    <form action="">
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First Name:</label> <br>
+            <input type="text" id="fname" value="John"> <br>
+            <label for="lname">Last Name:</label> <br>
+            <input type="text" id="lname" value="Doe"> <br> <br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <br>
+
+    <form action="">
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </form>
+
+    <br>
+
+    <form action=""
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+</body>
+
+</html>

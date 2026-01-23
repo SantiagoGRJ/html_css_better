@@ -1,0 +1,17 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.div img {
+    float: right;
+}
+
+.second img{
+    float: left;
+}
+
+.tree img {
+    float: none;
+}

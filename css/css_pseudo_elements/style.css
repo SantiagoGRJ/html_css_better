@@ -1,0 +1,37 @@
+
+q:lang(no){
+    quotes: "~" "~";
+}
+
+p:first-child{
+    color: blue;
+}
+
+a:link{
+    color: #FF0000;
+}
+a:visited{
+    color: #00FF00;
+}
+a:hover{
+    color: #FF00FF;
+}
+a:active{
+    color: #0000FF;
+}
+div:hover{
+    background-color: blue;
+}
+
+input:focus{
+    background-color: yellow;
+}
+a.highlight:hover{
+    color: #ff0000;
+}
+
+.tooltip p{
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}

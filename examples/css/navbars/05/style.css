@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Cascadia";
+    box-sizing: border-box;
+}
+
+header{
+    position: relative;
+    height: 600px;
+    background-image: url('./restaurant.avif');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+header::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+}
+.header-content{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+}
+.header-content span{
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    min-width: 400px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #E5E7EB;
+}
+.navbar ul li a:hover{
+    color: #38BDF8;
+    border-bottom: 1px solid white ;
+}
+.hero {
+    color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+    height: calc(600px - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h1{
+    color: #F8FAFC;
+}
+.hero p {
+    color: #E5E7EB;
+}
+@media (max-width:649px) {
+    .header-content{
+        flex-direction: column;
+        gap: 30px;
+    }
+}

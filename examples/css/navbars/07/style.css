@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Cascadia",sans-serif;
+    box-sizing: border-box;
+}
+
+
+.header{
+    height: 600px;
+    background-image: url('./restaurant.avif');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.header::before{
+    content: "";
+    inset: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.45);
+    
+}
+.header span{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+.header-content{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+}
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+.navbar ul li a{
+    color: #E5E7EB;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: #38BDF8;
+    border-bottom: 1px solid white;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 80px;
+    background-color: #0F172A;
+    color: white;
+    opacity: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 20;
+}
+.dropdown-content a{
+    display: block;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.hero{
+    position: relative;
+    height: calc(600px - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h1 {
+    color: #F8FAFC;
+}
+.hero p{
+    color: #94A3B8;
+}

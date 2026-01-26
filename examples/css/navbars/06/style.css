@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Cascadia",sans-serif;
+}
+.header{
+    height: 600px;
+    background-image: url('restaurant.avif');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+
+}
+.header span{
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.header-content{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+.navbar ul li a{
+    color: #E5E7EB;
+    text-decoration: none;
+}
+.dropdown{
+    position: relative;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 125px;
+    background-color: #020617CC;
+    color: #E5E7EB;
+    z-index: 20;
+}
+.dropdown-content a{
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+.dropdown-content a:hover{
+    background-color: #1E293B;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.hero{
+    position: relative;
+    z-index: 1;
+    height: calc(600px - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.hero h1{
+    color: #FFFFFF;
+}
+.hero p{
+    color: #E5E7EB;
+}

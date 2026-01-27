@@ -1,0 +1,22 @@
+
+section.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+article.gallery-item{
+    margin: 5px;    
+    border: 1px solid #ccc;
+    width: 180px;
+}
+article.gallery-item:hover{
+    border: 1px solid #777;
+}
+article.gallery-item img{
+    width: 100%;
+    height: auto;
+}
+article.gallery-item div.desc{
+    padding: 15px;
+    text-align: center;
+}

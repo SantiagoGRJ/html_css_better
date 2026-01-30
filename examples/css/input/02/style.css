@@ -3,7 +3,7 @@ input.first{
     padding: 12px;
     margin: 10px 0;
     box-sizing: border-box;
-    border: 2px solid red;
+    border: 2px solid rgb(31, 171, 0);  
     border-radius: 8px;
     background-image: url('lupa.png');
     background-size: 20px 20px;
@@ -13,12 +13,12 @@ input.first{
     background-color: #6b6b6b;
     color: white;
 }
-input.first:hover{
+input.first:hover{  
     background-color: rgb(118, 118, 118);
 }
 input.first:focus{
     outline: none;
-    border: 3px solid #555;
+    border: 2px solid #555;
 }
 
 textarea{
@@ -30,4 +30,21 @@ textarea{
     border: 2px solid #ccc;
     border-radius: 4px;
     background-color: #f8f8f8;
+}
+
+input.two{
+    
+     width: 400px;
+     padding: 12px;
+     border-radius: 8px;
+     border: 2px solid #555;
+     background-image: url('lupa.png');
+     background-position: 10px 10px;
+     background-size: 20px 20px;
+     background-repeat: no-repeat;
+     padding-left: 40px;
+}   
+input.two:focus{
+    outline: none;
+    background-color: #555;
 }

@@ -1,0 +1,10 @@
+.flex{
+    flex-direction: column;
+}
+input,input.message{
+    width: 70%;
+}
+
+.learn, .zone-check, button[type="submit"]{
+    margin-left: 0px;
+}

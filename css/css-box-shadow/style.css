@@ -1,0 +1,22 @@
+
+div.first{
+    padding: 10px 15px;
+    background-color: orange;
+    margin: 20px;
+    height: 100px;
+    width: 500px;
+    box-shadow: 10px 10px 5px 12px lightblue inset;
+}
+div.second{
+     padding: 10px 15px;
+    background-color: orange;
+    margin: 20px;
+    height: 100px;
+    width: 500px;
+    box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green ;
+}
+div.card{
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}

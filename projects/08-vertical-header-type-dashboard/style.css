@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto",sans-serif;
+}
+
+.header{
+    box-sizing: border-box;
+    position: fixed;
+    height: 100%;
+    width: 175px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0px;
+    text-align: center;
+    box-shadow: 6px 0 12px rgba(1, 96, 77, 0.35);
+}
+
+.header .logo{
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: #01987A;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li{
+    margin: 15px 0;
+}
+
+.navbar ul li a{
+    display: block;
+    text-decoration: none;
+    color: #017A62;
+    padding: 8px;
+    transition: .2s;
+}
+
+.navbar ul li a:hover{
+    background-color: #01604d;
+    color: #ffffff;
+}
+
+.header button{
+    background-color: #01987A;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0px 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.header button:hover{
+    background-color: #01604d;
+}
+
+.main-content{
+    height: 100vh;
+    margin-left: 175px;
+    padding: 30px;
+}
+
+.table-responsive{
+    margin-top: 40px;
+    overflow-x: auto;
+}
+
+.table{
+    border-collapse: separate;
+    border-spacing: 0px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,.08);
+    border-bottom: 2px solid #01987A;
+}
+
+.table th:first-child{
+    border-top-left-radius: 8px;
+}
+
+.table th:last-child{
+    border-top-right-radius: 8px;
+}
+
+.table th, .table td{
+    padding: 12px 16px;
+}
+
+.table th{
+    color: white;
+    background-color: #01987A;
+}
+
+
+.table tbody tr:nth-child(even){
+    background-color: #F5FAF9;
+    color: #01987A;
+}
+
+

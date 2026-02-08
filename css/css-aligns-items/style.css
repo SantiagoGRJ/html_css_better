@@ -1,0 +1,50 @@
+@font-face{
+    font-family: Roboto;
+    src: url('roboto-variable.woff2');
+}
+*{
+    font-family: Roboto;
+}
+.container{
+    display: flex;
+    background-color: dodgerblue;
+    margin-bottom: 10px;
+}
+.container div{
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+.container-first{
+    height: 200px;
+    align-items: center;
+}
+.container-two{
+    height: 200px;
+    align-items: flex-start;
+}
+.container-three{
+    height: 200px;
+    align-items: flex-end;
+}
+.container-four{
+    height: 200px;
+    align-items: stretch;
+}
+.container-five{
+    height: 400px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.container-six{
+    height: 400px;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.container-seven{
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}

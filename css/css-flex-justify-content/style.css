@@ -1,0 +1,36 @@
+@font-face{
+    font-family: Roboto;
+    src: url('roboto-variable.woff2');
+}
+*{
+    font-family: Roboto;
+}
+.container{
+    display: flex;
+    background-color: dodgerblue;
+    margin-bottom: 10px;
+}
+.container div{
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+.container-first{
+    justify-content: center;
+}
+.container-two{
+    justify-content: flex-start;
+}
+.container-three{
+    justify-content: flex-end;
+}
+.container-four{
+    justify-content: space-around;   /*  space before, between, and after the lines */
+}
+.container-five{
+    justify-content: space-between; /* space between the lines */
+}
+.container-six{
+    justify-content: space-evenly; /* the flex items with equal space around them */
+}

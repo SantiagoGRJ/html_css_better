@@ -1,0 +1,33 @@
+@font-face{
+    font-family: Roboto;
+    src: url('roboto-variable.woff2');
+}
+*{
+    font-family: Roboto;
+}
+.container{
+    display: flex;
+    background-color: dodgerblue;
+    margin-bottom: 10px;
+}
+.container div{
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+.container-two{
+    flex-direction: column;
+}
+.container-three{
+    flex-direction: row-reverse;
+}
+.container-four{
+    flex-direction: column-reverse;
+}
+.container-five{
+    flex-wrap: wrap;
+}
+.container-six{
+    flex-wrap: wrap-reverse;
+}

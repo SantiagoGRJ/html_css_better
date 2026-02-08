@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Roboto;
+    src: url('roboto-variable.woff2');
+}
+*{
+    font-family: Roboto;
+    padding: 0px;
+    margin: 0px;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-item{
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    flex: 33.3%;
+}
+@media (max-width:600px){
+    .flex-container{
+      flex: 100%;
+    }
+}

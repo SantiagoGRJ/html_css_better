@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Roboto;
+    src: url('roboto-variable.woff2');
+}
+*{
+    font-family: Roboto;
+}
+.container{
+    display: flex;
+    background-color: dodgerblue;
+    margin-bottom: 10px;
+}
+.container div{
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    background-color: white;
+}
+.container-six{
+    height: 300px;
+}

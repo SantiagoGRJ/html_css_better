@@ -1,0 +1,14 @@
+.info-box{
+    height: 600px;
+    padding: 20px 0;
+
+}
+.content-info-box{
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    gap: 3rem;
+}
+.content-articles{
+    flex-wrap: wrap;
+}

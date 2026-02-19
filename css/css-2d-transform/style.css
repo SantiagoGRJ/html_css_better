@@ -1,0 +1,21 @@
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.container{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    border: 1px solid black;
+    text-align: center;
+}
+.translate{
+    transform: translate(50px,100px);
+}
+.rotate{
+    transform: rotate(20deg);
+}
+.rotate-negative{
+    transform: rotate(-20deg);
+}

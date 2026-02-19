@@ -1,0 +1,22 @@
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.container{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.first{
+    transform: rotateX(150deg);
+}
+.second{
+    transform: rotateY(150deg);
+}
+.three{
+    transform: rotateZ(90deg);
+}

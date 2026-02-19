@@ -1,0 +1,28 @@
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.container{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    border: 1px solid black;
+    text-align: center;
+}
+.first{
+    transform: skewX(20deg);
+}
+.second{
+    transform: skewY(20deg);
+}
+.three{ 
+    transform: skew(20deg,10deg);
+}
+.four{
+    transform: skew(20deg);
+}
+.five{
+    transform: matrix(1,-0.3,0,1,0,0);
+}

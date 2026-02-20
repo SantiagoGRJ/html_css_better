@@ -1,0 +1,90 @@
+@keyframes myAnimation {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
+
+@keyframes mySecondAnimation {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: green;
+    }
+
+}
+
+@keyframes myThreeAnimation {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+}
+
+div {
+    margin: 10px;
+}
+
+.first {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+}
+
+.second {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: mySecondAnimation;
+    animation-duration: 4s;
+}
+
+.three {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: myThreeAnimation;
+    animation-duration: 4s;
+}

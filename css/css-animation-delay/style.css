@@ -29,24 +29,58 @@
         top: 0px;
     }
 }
-@keyframes myAnimationTwo{
+
+@keyframes myAnimationTwo {
     0% {
         background-color: red;
         left: 0px;
         top: 0px;
     }
-    25%{
+
+    25% {
         background-color: yellow;
         left: 200px;
         top: 0px;
     }
-    50%{
+
+    50% {
         background-color: blue;
         left: 200px;
         top: 200px;
     }
-    75%{
+
+    75% {
         background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+
+    }
+}
+
+@keyframes myAnimationThree {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: blue;
+        left: 200px;
+        top: 0px;
+    }
+    50%{
+        background-color: green;
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+        background-color: red;
         left: 0px;
         top: 200px;
     }
@@ -54,8 +88,11 @@
         background-color: red;
         left: 0px;
         top: 0px;
-
     }
+}
+
+div {
+    margin: 10px;
 }
 
 .first {
@@ -81,4 +118,17 @@
     animation-name: myAnimationTwo;
     animation-duration: 4s;
     animation-delay: 2s;
+}
+
+.three {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: myAnimationThree;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 3;
+
 }

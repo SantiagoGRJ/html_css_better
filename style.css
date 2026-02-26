@@ -1,0 +1,31 @@
+@keyframes myAnimation {
+    from{
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes myAnimationTwo {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.05);
+    }
+}
+
+button{
+    padding: 14px 17px;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    color: yellow;
+    letter-spacing: 1px;
+    font-weight: 700;
+    cursor: pointer;
+   /* animation: name  duration timing-function delay iteration-count direction fill-mode;  */
+    animation: myAnimation 1.2s ease-out 0s 1 forwards, myAnimationTwo 2s ease-in-out 2s infinite alternate;
+}

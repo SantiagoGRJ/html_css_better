@@ -1,0 +1,29 @@
+body{
+    padding: 50px;
+}
+.tooltip{
+    display: inline-block;
+    position: relative;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+}
+.tooltiptext{
+    opacity: 0;
+    transition: opacity 2s;
+    visibility: hidden;
+    position: absolute;
+    width: 130px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -65px;
+    background-color: black;
+    border-radius: 8px;
+    padding: 5px 0px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}

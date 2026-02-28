@@ -1,0 +1,55 @@
+body{
+    padding: 100px;
+}
+div{
+    margin: 20px;
+}
+.tooltip{
+    display: inline-block;
+    position: relative;
+    border-bottom: 1px dotted black;
+}
+.tooltiptext{
+    opacity: 0;
+    transition: opacity 2s;
+    visibility: hidden;
+    position: absolute;
+    bottom: 100%;
+    left: 60%;
+    margin-left: -55px;
+    background-color: black;
+    width: 110px;
+    padding: 5px 0;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltiptwo{
+    display: inline-block;
+    position: relative;
+    border-bottom: 1px dotted black;
+}
+.tooltiptexttwo{
+    opacity: 0;
+    transition: opacity 2s;
+    position: absolute;
+    visibility: hidden;
+    width: 130px;
+    background-color: black;
+    border-radius: 8px;
+    padding: 5px 0;
+    color: white;
+    text-align: center;
+    top: -5px;
+    left: 105%;
+    z-index: 1;
+}
+.tooltiptwo:hover .tooltiptexttwo{
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,0 +1,38 @@
+body{
+    padding: 100px 150px;
+}
+.tooltip{
+    display: inline-block;
+    position: relative;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+}
+.tooltiptext{
+    opacity: 0;
+    transition: opacity 2s;
+    visibility: hidden;
+    position: absolute;
+    top: -5px;
+    right: 105%;
+    background-color: black;
+    border-radius: 8px;
+    width: 130px;
+    padding: 5px 0;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+.tooltiptext::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}

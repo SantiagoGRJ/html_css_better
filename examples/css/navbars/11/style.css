@@ -1,0 +1,38 @@
+@keyframes animationNavbar {
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.navbar ul li {
+    animation-name: animationNavbar;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.i1{
+    animation-delay: 0.0s;
+}
+.i2{
+    animation-delay: 0.2s;
+}
+.i3{
+    animation-delay: 0.4s;
+}
+.i4{
+    animation-delay: 0.6s;
+}
+.i5{
+    animation-delay: 0.8s;
+}

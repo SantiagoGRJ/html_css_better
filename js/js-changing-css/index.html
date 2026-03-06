@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Css with Js</title>
+</head>
+<body>
+    <h1 id="id1">My heading 1</h1>
+    <p id="p2">Hello World!</p>
+
+    <button type="button" 
+    onclick="document.getElementById('id1').style.color='red'"
+    >
+        Click Me!
+    </button>
+
+    <input type="button" value="Hide text" onclick="document.getElementById('id1').style.visibility='hidden'" >
+    <input type="button" value="Show text" onclick="document.getElementById('id1').style.visibility='visible'" >
+
+    <script src="app.js"></script>
+</body>
+</html>

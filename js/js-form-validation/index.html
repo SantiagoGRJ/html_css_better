@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="myForm" action="" onsubmit="return validateForm()" method="post" >
+        <label for="">Name:</label>
+        <input type="text" name="fname" required >
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <h2>JavaScript Validation</h2>
+    <p>Please input a number between 1 and 10</p>
+    <input type="text" id="numb">
+    <button onclick="myFunction()" type="button">Submit</button>
+    <p id="demo"></p>
+    <script src="app.js"></script>
+</body>
+</html>

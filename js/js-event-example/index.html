@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body onload="checkCookies()" >
+    <p id="info-cookies"></p>
+
+    <h1 onclick="this.innerHTML = 'Ooops!'">Click on this text!</h1>
+
+    <h1 onclick="changeText(this)">Click on this text!</h1>
+
+    <button onclick="displayDate()">The time is?</button>
+
+    <p id="demo"></p>
+
+    <button id="myBtn" >Try it</button>
+    <p id="demoo"></p>
+
+    <br>
+    <input type="text" id="fname" oninput="upperCase()" >
+
+    <input type="text" id="fnamee" onchange="upperCasee()" >
+
+
+    <div class="" onmousedown="mDown(this)" onmouseup="mUp(this)" 
+    style="background-color:#D94A38; width:90px; height:20px; padding:40px "
+    >
+        Click me
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+@keyframes myAnimation {
+    from{
+        transform: translatex(500px);
+    }
+    to{
+        transform: translatex(0px);
+    }
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+    
+}
+.counter-container{
+    box-sizing: content-box;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    background-color: #191C37;
+    color: white;
+    min-width: 250px;
+    height: 500px;
+    border-radius: 10px;
+}
+.counter-container #count{
+    font-size: 24px;
+}
+
+button{
+    background-color: #0087FF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+button.increment {
+    background-color: green;
+}
+button.increment:hover{
+    background-color: #00f88c;
+    box-shadow: 2px 2px 10px #0087FF;
+}
+button.increment:active{
+    background-color: #01a8ba;
+}   
+button.decrement {
+    background-color: red;
+}
+button.decrement:hover {
+    background-color: #f1b500;
+    box-shadow: 2px 2px 8px #944c04;
+}
+button.decrement:active{
+    background-color: #810228;
+}
+.first-buttom{
+    display: flex;
+    justify-content: space-evenly;
+}
+.second-buttom{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-warning{
+    animation: myAnimation 1.5s ;
+    display: none;
+    margin-top: 30px;
+    text-align: center;
+    background-color: orange;
+    padding: 0px 10px;
+    height: 100px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 20px rgb(235, 86, 0);
+    color: rgb(231, 108, 0);
+}

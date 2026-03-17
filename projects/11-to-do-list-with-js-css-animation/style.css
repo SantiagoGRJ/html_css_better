@@ -1,5 +1,17 @@
-
+@font-face {
+    font-family: snpro;
+        src: url(snpro-variable.woff2);
+}
+@keyframes warningAnimation {
+    from{
+        transform: translateX(500px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
 body{
+    font-family: snpro;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,3 +92,15 @@ body{
     color: white;
     cursor: pointer;
 }
+.container-warning{
+    display: none;
+    animation: warningAnimation 0.7s;
+    text-align: center;
+    margin-top: 50px;
+    background-color: orange;
+    padding: 14px;
+    border-radius: 7px;
+    color: rgb(237, 95, 1);
+    box-shadow: 2px 7px 20px rgb(254, 105, 19);
+}
+

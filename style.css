@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.form{
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+    width: 300px;
+    border-radius: 7px;
+    padding: 20px 10px;
+}
+.form h2{
+    text-align: center;
+}
+.field label{
+    display: block;
+    font-weight: 200;
+    margin-bottom: 12px;
+}
+.field input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 14px 10px ;
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 3px;
+    outline: none;
+}

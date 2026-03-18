@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.form{
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+    width: 300px;
+    border-radius: 7px;
+    padding: 20px 10px;
+}
+.form h2{
+    text-align: center;
+    color: gray;
+}
+.field label{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+.field input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 14px 10px ;
+    border: 2px solid rgb(173, 173, 173);
+    border-radius: 3px;
+    outline: none;
+}
+button[type="submit"]{
+    background-color: rgb(4, 82, 160);
+    border: none;
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+button[type="submit"]:hover{
+    background-color: rgb(4, 60, 116);
+}
+.error {
+  color: red;
+  margin: 0;
+}
+.ok{
+    background-color: green;
+    margin: 0;
+}

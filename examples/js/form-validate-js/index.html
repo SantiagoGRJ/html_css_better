@@ -9,23 +9,30 @@
 </head>
 
 <body>
-    <form id="formSignUpForm" class="form">
+    <form id="formSignUp" class="form">
         <h2>Sign Up</h2>
         <div class="field">
             <label for="">Name:</label>
-            <input type="text" name="name" placeholder="Your Name">
+            <input id="name" type="text" name="name" placeholder="Your Name">
             <p id="nameError" class="error"></p>
         </div>
         <div class="field">
             <label for="">Email:</label>
-            <input type="text" name="email" placeholder="Your Email">
+            <input id="email" type="text" name="email" placeholder="Your Email">
             <p id="emailError" class="error"></p>
         </div>
         <div class="field">
             <label for="">Password:</label>
-            <input type="text" name="name" placeholder="Your Password">
+            <input id="password" type="text" name="password" placeholder="Your Password">
             <p id="passwordError" class="error"></p>
         </div>
+        <div class="field">
+            <label for="">Confirm Password:</label>
+            <input id="confirmPassword" type="text" name="password" placeholder="Your Password">
+            <p id="confirmPasswordError" class="error"></p>
+        </div>
+        <button type="submit">Sign Up</button>
+        <p id="result"></p>
     </form>
 
     <script src="app.js"></script>

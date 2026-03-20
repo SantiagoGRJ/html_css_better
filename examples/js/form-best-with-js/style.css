@@ -13,6 +13,7 @@ body{
     background-color: #F5F6F8;
 }
 .form{
+    border-radius: 7px;
     box-sizing: border-box;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -25,9 +26,7 @@ body{
 .form-title{
     font-weight: 500;
 }
-.form input:first-of-type{
-    margin-bottom: 30px;
-}
+
 .form input{
     box-sizing: border-box;
     margin-top: 8px;
@@ -37,6 +36,9 @@ body{
     border: 1px solid rgb(182, 182, 182);
     border-radius: 2px;
     outline: none;
+}
+.container-password{
+    margin-top: 30px;
 }
 .form label{
     font-size: 14px;
@@ -55,4 +57,9 @@ button{
     border-radius: 2px;
     letter-spacing: 1px;
     cursor: pointer;
+}
+
+.error-message{
+    color: red;
+    margin: 0px;
 }

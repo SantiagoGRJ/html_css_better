@@ -7,18 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="SignInForm" class="form" action="">
+    <form id="signInForm" class="form" action="">
         <h3 class="form-title">Sign in to your account</h3>
         <div class="">
             <label for="email">Email</label>
             <input id="emailInput" type="text" name="email" >
+            <p id="emailError" class="error-message" ></p>
         </div>
-        <div class="">
+        <div class="container-password">
             <label for="password">Password</label>
             <label class="blue-label" for="password">Forgot your password?</label>
             <input id="passwordInput" type="password" >
+            <p id="passwordError" class="error-message" ></p>
         </div>
-        <button class="btnSignIn" type="submit">Sign In</button>
+        <button id="btnSignIn" class="btnSignIn" type="submit">Sign In</button>
     </form>
+
+    <script src="app.js"></script>
 </body>
 </html>

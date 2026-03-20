@@ -1,0 +1,58 @@
+@font-face {
+    font-family: snpro;
+    src: url(snpro-variable.woff2);
+}
+body{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: snpro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F5F6F8;
+}
+.form{
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 400px;
+    height: 400px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.form-title{
+    font-weight: 500;
+}
+.form input:first-of-type{
+    margin-bottom: 30px;
+}
+.form input{
+    box-sizing: border-box;
+    margin-top: 8px;
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 2px;
+    outline: none;
+}
+.form label{
+    font-size: 14px;
+}
+.form label.blue-label{
+    float: right;
+    color: rgb(16, 108, 157);
+    font-weight: 500;
+}
+button{
+    margin-top: 30px;
+    padding: 10px 12px;
+    background-color: #016FF9;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}

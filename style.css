@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding: 15px;
+    gap: 10px;
+}
+.container-one{
+    position: relative;
+    width: 350px;
+    height: auto;
+}
+.container-one img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay-one{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(70, 70, 70,.7);
+    opacity: 0;
+    transition: opacity .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 20px;
+}
+.container-one:hover .overlay-one{
+    opacity: 1;
+}
+.container-one h4{
+    color: orange;
+}
+.container-one p{
+    color: white;
+}
+
+.container-two{
+    position: relative;
+    width: 350px;
+    height: auto;
+}
+.container-two img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay-two{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+    background-color: rgba(58, 58, 58, 0.819);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 20px;
+}
+.container-two:hover .overlay-two{
+    bottom: 0;
+    height: 100%;
+}
+.overlay-two h4{
+    color: orange;
+    margin-bottom: 10px;
+}
+.overlay-two p{
+    color: white;
+}
+.container-three{
+    position: relative;
+    width: 350px;
+    height: auto;
+}
+.container-three img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay-three{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;    
+    height: 0;
+    overflow: hidden;
+    background-color: rgba(74, 78, 81, 0.755);
+    transition: .5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 15px;
+    text-align: center;
+}
+.container-three:hover .overlay-three{
+   height: 100%;
+}
+.overlay-three h4{
+    color: orange;
+}
+.overlay-three p{
+    color: white;
+}
+.container-four{
+    position: relative;
+    width: 350px;
+    height: auto;
+}
+.container-four img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay-four{
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.589);
+    transition: .5s ease;
+}
+.container-four:hover .overlay-four{
+    width: 100%;
+}

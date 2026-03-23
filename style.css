@@ -3,11 +3,16 @@ body{
     margin: 0px;
     display: flex;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
+    width:1400px;
+    padding: 10px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 .container{
     position: relative;
+    width: 200px;
+    height: 200px;
 }
 .image{
     display: block;
@@ -34,4 +39,265 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
+}
+
+.container-two{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.container-two img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay-two{
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .5s ease;
+    background-color: orange;
+}
+.container-two:hover .overlay-two{  
+    opacity: 1;
+}
+.overlay-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-three{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.container-three img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay-three{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .5s ease;
+    background-color: orange;
+}
+.container-three:hover .overlay-three{
+    opacity: 1;
+}
+.container-four{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.container-four img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay-four{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: orange;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: bottom .5s ease;
+}
+.container-four:hover .overlay-four{
+    bottom: 0;
+    height: 100%;
+}
+
+.container-five{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.container-five img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay-five{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: orange;
+    color: black;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container-five:hover .overlay-five{
+    bottom: 0;
+    height: 100%;
+}
+
+.container-six{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.container-six img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay-six{
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+.container-six:hover .overlay-six{
+    opacity: 1;
+}
+
+.container-seven{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.container-seven img{
+    display: block;
+    width: 100%;
+    height: auto;    
+}
+.overlay-seven{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: orange;
+    overflow: hidden;
+    height: 0;
+    transition: .5s ease;
+}
+.container-seven:hover .overlay-seven{
+    bottom: 0;
+    height: 100%;
+}
+
+.container-eight{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.container-eight img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay-eight{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .5s ease;
+    background-color: orange;
+}
+.container-eight:hover .overlay-eight{
+    opacity: 1;
+}
+
+.container-nine{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.container-nine img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay-nine{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    height: 0;
+    background-color: orange;
+    width: 100%;
+    overflow: hidden;
+    transition: .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-nine:hover .overlay-nine{
+    bottom: 0;
+    height: 100%;
+}
+
+.container-ten{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.container-ten img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay-ten{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: orange;
+    transition: .5s ease;
+}
+.container-ten:hover .overlay-ten{
+    height: 100%;
+}
+.container-twelve{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.container-twelve img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay-twelve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: orange;
+    transition: .5s ease;
+}
+.container-twelve:hover .overlay-twelve{
+    height: 100%;
 }

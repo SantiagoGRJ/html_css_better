@@ -134,12 +134,24 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    width: 0;
-    height: 100%;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.589);
-    transition: .5s ease;
+    width: 0;
+    height: 100%;
+    transition: .3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
 }
 .container-four:hover .overlay-four{
     width: 100%;
+}
+.container-four h4{
+    color: orange;
+}
+.container-four p{
+    color: white;
 }

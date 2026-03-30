@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar responsive hamburger</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width:500px)" href="responsive.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="responsive.css">
 </head>
 
 <body>
@@ -14,9 +14,10 @@
         <div class="container-logo">
             <img class="logo" src="dark-favicon.png" alt="">
         </div>
-        <img class="icon-hamburger" src="image.png" alt=""  >
-        <nav class="navbar">
+        <img id="icon-hamburger" class="icon-hamburger" src="image.png" alt=""  >
+        <nav id="navbar" class="navbar">
             <ul class="list-items">
+                <img id="icon-close" class="icon-close" src="close-icon.png" alt="">
                 <li><a class="items" href="">Home</a></li>
                 <li><a class="items" href="">Contact Us</a></li>
                 <li><a class="items" href="">Maps</a></li>
@@ -24,6 +25,8 @@
             </ul>
         </nav>
     </header>
+
+    <script src="app.js"></script>
 </body>
 
 </html>

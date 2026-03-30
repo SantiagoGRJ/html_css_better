@@ -1,0 +1,16 @@
+    .icon-hamburger, .icon-close {
+        display: block;
+    }
+    .icon-close{
+        align-self: flex-end;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .navbar .list-items {
+        display: none;
+    }
+
+    .navbar.navbar-responsive .list-items {
+        display: flex;
+    }

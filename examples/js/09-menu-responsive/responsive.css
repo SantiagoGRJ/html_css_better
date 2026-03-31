@@ -1,0 +1,17 @@
+
+.container-header{
+    justify-content: space-between;
+}
+
+#navbar .list-item{
+    display: none;
+}
+
+.hamburger-menu{
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+}
+#close-menu{
+    display: block;
+}

@@ -1,0 +1,93 @@
+@font-face {
+    font-family: snpro;
+    src: url('snpro-variable.woff2');
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: snpro;
+}
+
+.navbar-header{
+    display: none;
+}
+.btn-menu,
+.btn-close{
+    display: none;
+    width: 38px;
+    height: 38px;   
+    background:none;
+    border: none;
+    cursor: pointer;
+}
+.btn-menu img,
+.btn-close img{
+    width: 38px;
+    height: 38px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+    background-color: rgb(237, 237, 237);
+}
+.logo-desktop{
+    width: 48px;
+    height: 48px;
+}
+.list-items{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.item{
+    text-decoration: none;
+    color: black;
+}
+.item:hover{
+    color: rgb(196, 196, 196);
+}
+
+.navbar.navbar-responsive {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.5);  
+    display: flex;
+    flex-direction: column;
+}
+.navbar.navbar-responsive .navbar-header,
+.navbar.navbar-responsive .list-items{
+    background-color: white;
+}
+.navbar.navbar-responsive .navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    width: 100%;
+    height: 85px;
+}
+.navbar.navbar-responsive .navbar-header .logo-mobile{
+        width: 48px;
+    height: 48px;
+}
+.navbar.navbar-responsive .navbar-header img{
+    width: 32px;
+    height: 32px;
+}
+.navbar.navbar-responsive .list-items{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.navbar.navbar-responsive .list-items .item{
+    display: block;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Responsive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-logo">
+            <img src="logo.png" alt="logo desktop" class="logo-desktop">
+        </div>
+        <button id="btn-open-menu" class="btn-open-menu" type="button" aria-label="hambuerger menu">
+            <img class="icon-open-menu" src="hamburger-menu.png" alt="">
+        </button>
+        <nav id="navbar" class="navbar">
+            <section class="navbar-header">
+                <img src="logo.png" alt="" class="logo-navbar-responsive">
+                <button id="btn-close-menu" class="btn-close-menu" aria-label="close menu">
+                    <img class="icon-close-menu" src="close-menu.png" alt="">
+                </button>
+            </section>
+            <ul class="list-items">
+                <li><a class="item" href="#">Home</a></li>
+                <li><a class="item" href="#">Products</a></li>
+                <li><a class="item" href="#">Contact Us</a></li>
+                <li><a class="item" href="#">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+.header{
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+.btn-open-menu{
+    display: block;
+}
+.navbar {
+    display: none;
+}
+.navbar-header{
+    display: block;
+}
+
+.btn-close-menu {
+    display: block;
+}

@@ -1,0 +1,29 @@
+Creating New HTML Elements (Nodes)
+
+To add a new element to the HTML DOM, you must create the element (element node) first, 
+and then append it to an existing element.
+
+
+Creating new HTML Elements - InsertBefore()
+parent.insertBefore(here element insert, position before element or child)
+The appendChild method in the previous example, appended the new element as the last child of the parent.
+
+if you don't want that you can use the insertBefore method.
+
+
+Removing Existing HTML Elements
+
+to remove an HTML element, use the remove() method
+element.remove()
+
+
+Removing a Child Node
+
+For browsers that does not support the remove method, you have to find to parent node to remove element
+parent.removeChild(here Child)
+
+
+Replacing HTML Elements
+
+to replace element  to the HTML DOM, use the replaceChild() method.
+

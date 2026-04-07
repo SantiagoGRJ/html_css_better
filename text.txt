@@ -1,0 +1,5 @@
+Creating New HTML Elements (Nodes)
+
+To add a new element to the HTML DOM, you must create the element (element node) first, 
+and then append it to an existing element.
+

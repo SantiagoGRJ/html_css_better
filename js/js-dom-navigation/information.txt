@@ -1,0 +1,45 @@
+Navigating Between Nodes
+
+
+You can use the following node properties to navigate between nodes with JavaScript:
+
+    parentNode
+    childNodes [nodeNumber]
+    firstChild
+    lastChild
+    nextSibling
+    previusSibling
+
+
+DOM ROOT NODES 
+
+document.body -  The body of the document
+
+document.documentElement - The full document
+
+
+The NodeName Property
+
+nodeName always contains the uppercase tag name of an HTML element.
+
+
+The NodeValue Property
+
+The nodeValue property specifies the value of node
+    
+    nodeValue for element nodes is null
+    nodeValue for text nodes is the text itself
+    nodeValue for attribute nodes is the attribute value
+
+
+The nodeType Property
+
+The nodeType property is read only. It returns the type of a node.
+
+Valores Comunes de nodeType:
+    1 (ELEMENT_NODE): Representa etiquetas HTML como <div>, <p>, etc.
+    2 (ATTRIBUTE_NODE): Representa los atributos de un nodo q(cada vez menos usado)
+    3 (TEXT_NODE): Representa el texto real dentro de un elemento
+    9 (DOCUMENT_NODE): Representa el objeto document
+
+    

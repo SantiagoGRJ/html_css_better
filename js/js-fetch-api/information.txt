@@ -1,0 +1,90 @@
+Peticiones con el método fetch()
+
+    Realizar peticiones HTTP asíncronas utilizando promesas
+    El código es un poco más sencillo y menos verbose.
+
+
+Opciones de fetch()
+
+    Se le puede pasar un segundo parámetro de opciones de forma opcional, un OBJECT con opciones de la petición HTTP
+
+En este objeto podemos definir varios detalles:
+
+    String method      - Metodo HTTP de la peticion, Por defecto, GET. Otras peticiones: HEAD, POST, etc
+    Object headers     - Cabezeras HTTP. Por defecto, {}
+    Object body        - Cuerpo de la peticion HTTP. Puede ser de varios tipos: String, FormData, Blob, etc
+    String Credentials - Modo de credenciales. Por defecto, omit. Otras opciones: same-origin e include 
+
+
+Object headers
+
+    Es posible crear un objeto Headers con el que trabajar
+
+Aparte del metodo .set() podemos utilizar varios otros para trabajar con cabezeras,
+comprobar su existencia, obtener o cambiar los valores o incluso eliminarlos
+
+Bool   .has(name)           - comprueba si la cabezera name esta definida
+String .get(name)           - obtiene el valor de la cabezera name
+       .set(name, value)    - Establece o modifica el valor value, a la cabezera name
+       .append(name,value)  - Añade un nuevo valor value a la cabezera name.
+       .delete(name)        - Elimina la cabezera
+
+
+Response
+Observaremos que en el primer .then() tenemos un objeto response. Se trata de la respuesta
+que nos llega del servidor web al momento de recibir nuestra petición.
+
+Una arrow function que hace return implicito de la promesa que devuelve el metodo .text(),
+dicho objeto response tiene una serie de propiedades y metodos que pueden resultarnos utiles
+al implementar nuestro codigo
+
+Properties 
+
+NUMBERS .status     - codigo de error HTTP de la respuesta (100-599).
+STRING  .statusText - Texto representativo del código de error HTTP anterior.
+BOOLEAN .ok         - Devuelve TRUE si el codigo HTTP es 200 (o empieza por 2)
+OBJECT .headers     - Cabezeras de la respuesta
+STRING .url         - URL de la peticion HTTP
+
+Processing response
+
+La instancia Response tambien tiene algunos metodos interesantes,
+la mayoria de ellos para procesar mediante una promesa los datos recibidos
+y facilitar el trabajo con ellos:
+
+    .text()           - Devuelve una promesa con el texto plano de la respuesta
+    .json()           - Idem, pero con un objeto json. Equivale a usar JSON.parse()
+    .blob()           - Idem, pero con un objeto Blob (Binary large Object)
+    .arrayBuffer()    - Idem, pero con un objecto ArrayBuffer (Buffer binario puro)
+    .formData         - Idem, pero con un objeto FormData (datos de formulario)
+    .clone            - Crea y devuelve un clon de la instancia en cuestion.
+    .Response.error() - Devuelve un nuevo objeto Response con un error de red asociado
+
+
+Promesas usando .then()
+
+    Comprobamos que la peticion es correcta con response.ok
+    Utilizamos response.text() para procesarla
+    En el caso de producirse algún error, lanzamos con el código de error
+    Procesamos los datos y los mostramos en la consola
+    En el caso de que la PROMISE sea rechazada, capturamos el error con el catch
+    Si ocurre un error 404, 500 o similar, lanzamos error con throw para capturarlo en el catch
+
+Promesas usando Async/await
+
+Utilizar async/await no es más que lo que se denomina azúcar sintáctico, 
+es decir, utilizar algo visualmente más agradable, 
+pero que por debajo realiza la misma tarea. 
+Para ello, lo que debemos tener siempre presente es que un await 
+sólo se puede ejecutar si esta dentro de una función definida como async.
+
+En este caso, lo que hacemos es lo siguiente:
+
+    Creamos una función request(url) que definimos con async
+    Llamos a fetch utilizando await para esperar y resolver la promesa
+    Comprobamos si todo ha ido bien usando response.ok
+    LLamamos a response.text() utilizando await y devolvemos el resultado
+
+    
+
+

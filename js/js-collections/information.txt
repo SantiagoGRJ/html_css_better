@@ -1,0 +1,4 @@
+The getElementByTagName method returns an HTMLCollection object.
+
+An HTMLCollection object is an array-like (collection) of HTML elements.
+

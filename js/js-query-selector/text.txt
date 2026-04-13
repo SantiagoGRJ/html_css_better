@@ -1,0 +1,37 @@
+Metodos modernos de busqueda
+
+ELEMENT .querySelector(sel) busca el primer elemento que coincide con el selector CSS sel.  Devuelve NULL
+ARRAY .querySelectorAll(sel) busca todos los elementos que coinciden con el selector Css sel. Devuelve []
+
+Con estos dos metodos podemos realizar todo lo que haciamos con los metodos tradicionales mencionados 
+anteriormente e incluso mucho mas cosas ( en menos codigo ) gracias a CSS.
+
+El metodo .querySelector devuelve el primer elemento que encuentra que encaja con el selector 
+CSS indicado por parametro.
+
+  Permite suministrarle un selector CSS basico o incluso un selector CSS avanzado,
+  se vuelve un sistema mucho más potente que los tradicionales 
+  
+  El primer ejemplo sería equivalente a utilizar un .getElementById(), 
+  sólo que en la versión de .querySelector() indicamos por parámetro un , 
+  y en el primero le pasamos un simple . Observa que estamos indicando un # porque se trata de un id.
+  
+  En el segundo ejemplo, estamos recuperando el primer elemento con clase info 
+  que esté dentro de otro con clase main. En los métodos tradicionales, 
+  sería menos directo ya que tendríamos que realizar varias llamadas. 
+  Con .querySelector() se hace directamente sólo con una.
+
+
+querySelectorAll
+
+El metodo querySelectorAll realiza una busqueda de elementos en el DOM, solo que como 
+podremos intuir por ese All, devuelve un array con todos los elementos que coinciden con el 
+selector CSS.
+
+
+Busqueda Acotada 
+
+Al realizar una búsqueda de un elemento particular y guardarlo en una variable o constante,
+podemos volver a realizar una nueva búsqueda posteriormente sobre ese elemento, en lugar 
+del DOM íntegro document.
+

@@ -1,0 +1,53 @@
+La asincronía es uno de los conceptos principales que existen en el mundo de Javascript. 
+Cuando comenzamos, es muy común trabajar con código síncrono (secuencial), sin embargo, 
+llegado a un punto necesitaremos trabajar con código asíncrono, el cúal puede ser muy frustante
+si no lo entendemos bien.
+
+¿Qué es la sincronía?
+Cuando hablamos de sincronía, nos referimos a una forma de ejecutar código. Cuando comenzamos 
+a programar, normalmente realizamos tareas de forma síncrona, llevando a cabo tareas secuenciales que se 
+ejecutan una detrás de otra, de modo que el orden o flujo del programa es sencillo y fácil de observar
+en el código. 
+
+Sin embargo, en el mundo de la programación, tarde o temprano necesitaremos realizar operaciones
+asíncronas, especialmente en ciertos lenguajes como Javascript, donde tenemos que realizar tareas 
+que tienen que esperar a que ocurra un determinado suceso.
+
+Este suceso tiene varias caracteristicas.
+
+    1️⃣ Generalmente, no depende de nosotros
+    2️⃣ No solemos saber cuando va a ocurrir
+    3️⃣ A veces, ni siquiera sabemos si va a ocurrir
+
+Lenguaje no bloqueante 
+
+Concepto importante es saber cuando el código es bloqueante o no. Observa el fragmento de código anterior.
+Hasta la segunda_funcion() termine, la tercera_funcion() no comenzará. En ese caso, segunda_funcion() está 
+bloqueando tercera_funcion().
+
+Además, esto es especialmente importante en casos donde, por ejemplo, segunda_funcion(), necesite información 
+de un sistema ajeno al nuestro (por ejemplo, que el usuario escriba información por teclado).
+Hasta que el usuario no realice esa acción, al ser bloqueante, no se ejecutará el codigo que hay a continuación.
+
+    Esta es la forma de trabajar de muchos lenguajes, sin embargo, 
+    sería muy interesante que nuestro código «se quede a la espera» 
+    mientras ejecutamos y realizamos otras tareas.
+
+
+¿Qué son los callbacks?
+
+Los callbacks (a veces denominados funciones de retrollamada o funciones callback) no son más que un tipo de
+funciones que se pasan por parámetro a otras funciones. El objetivo de esto es tener una forma reutilizable de 
+escribir funciones, que además entra bastante en consonancia con el concepto de asincronía de Javascript.
+
+    Ten en cuenta que actualmente, controlar la asincronía únicamente mediante callbacks 
+    puede ser una práctica poco recomendable. Es preferible utilizar promesas, que generalmente es lo más cómodo.
+
+¿Qué es un callback?
+
+Las funciones callback no son más que un tipo de funciones que se pasan por parámetro a otras funciones.
+Además, los parámetros de esos callbacks toman un valor especial en el interior de la función.
+
+Pero pa
+
+
